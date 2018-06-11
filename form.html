@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Form Validator</title>
+	<link rel="stylesheet" href="form.css">
+	<script src="email.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1 class="vali" style="color: blue;">Form Validation</h1>
+		<div class="format">
+			<form action="#" onsubmit="return validation();" method="post">
+				<div class="forform">
+					<p align="left"> Username: </p>
+					<input type="text" name="user" id="username" class="test">
+					<input type="button" name="check" value="check" onclick="checkusername()">
+					<span id="usernameid" class="usernamei"></span>
+				</div>
+
+				<div class="forform">
+					<p align="left"> Password: </p>
+					<input type="password" name="pass" id="password" class="test">
+					<input type="button" name="check" value="check" onclick="checkpa()">
+					<span id="passwords" class="password"></span>
+				</div>
+
+				<div class="forform">
+					<p align="left"> Confirm Password: </p>
+					<input type="password" name="conpass" id="conpassw" class="test">
+					<input type="button" name="check" value="check" onclick="checkpass()">
+					<span id="confrmpassword" class="confrmpasswro"></span>
+				</div>
+
+				<div class="forform">
+					<p align="left"> Phone: </p>
+					<input type="text" name="number" id="numbermobile" class="test">
+					<input type="button" name="check" value="check" onclick="checkphone()">
+					<span id="mobilenumber" class="mobilenumbe"></span>
+				</div>
+
+				<div class="forform">
+					<p align="left"> Email: </p>
+					<input type="text" name="email" id="emailid" class="test">
+					<input type="button" name="check" value="check" onclick="checkEmail()">
+					<span id="emailids" class="emaili"></span> 
+				</div>
+				<div class="forform">
+				<input type="submit" name="submit" value="Submit" class="test">
+			</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
